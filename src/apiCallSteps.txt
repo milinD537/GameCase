@@ -1,0 +1,3 @@
+go to docs
+acquire api key
+fd320dbfcaa74d27869456b89695d9ed

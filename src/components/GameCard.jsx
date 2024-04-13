@@ -1,10 +1,26 @@
 import React from 'react'
-import gameJSON from "./../../public/test-games.json"
 
-export default function GameCard() {
+export default function GameCard({item}) {
   return (
-    <div>{gameJSON.results[0].id}</div>
+    <>
+      <div className='card |'>
+        <div className='cardImageWrapper'>
+          <img src={item.background_image}/>
+        </div>
+        <div className='cardDetails'>
+          <h3 className='gameTitle'>{item.name}</h3>
+          <div className='gameRatingWrapper'>
+            <img src='/ratingStar.png'/>
+            <span className='inline-block'>{item.rating}</span>
+          </div>
+          <p className='gamePlaytime'><span>{item.playtime}</span>hrs</p>
+        </div>
+      </div>
+    </>
   )
 }
+
+
+
 
 
