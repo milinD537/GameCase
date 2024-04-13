@@ -12,17 +12,27 @@
 * {
   margin: 0;
   padding: 0;
-  outline: solid hsl(0,0%,90%,10%);
+  /* outline: solid hsl(0,0%,90%,10%); */
 }
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
-html,
+/* html,
 body {
   height: 100%;
-}
+} */
 /* FONT */
 body {
   font-family: "Space Grotesk", sans-serif;
+}
+
+@keyframes scaleAnimation {
+  0%,
+  100% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
 }
