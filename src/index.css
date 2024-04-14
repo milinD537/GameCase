@@ -36,3 +36,10 @@ body {
     scale: 1.05;
   }
 }
+
+.bg-radial-gradient {
+  background: radial-gradient(circle at 5% 50%, white 1%, transparent 5%);
+  background-position: left;
+  background-clip: text;
+  outline: solid red;
+}

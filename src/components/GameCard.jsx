@@ -5,7 +5,7 @@ export default function GameCard({item}) {
     <>
       <div className='card | cursor-pointer'>
         <div className='cardImageWrapper group | hover:contrast-75 hover:brightness-105 transition-all relative'>
-        <div className='absolute top-2 right-2 w-7 h-7 rounded-[50%] border-2 border-white bg-black grid place-items-center opacity-0 group-hover:opacity-100 transition-all'></div>
+        <div className='absolute top-2 right-2 w-7 h-7 rounded-[50%] border-2 border-white bg-black grid place-items-center opacity-0 group-hover:opacity-100 transition-all | before:content-[""] before:absolute before:w-3 before:h-[0.2rem] before:bg-white before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 | after:content-[""] after:absolute after:w-3 after:h-[0.2rem] after:bg-white after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rotate-90'></div>
           <img src={item.background_image} className='w-full aspect-[1/1.4] object-cover rounded-md'/>
         </div>
         <div className='cardDetails'>
